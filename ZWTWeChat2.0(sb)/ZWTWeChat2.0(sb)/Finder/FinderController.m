@@ -81,7 +81,7 @@
         [self.navigationController pushViewController:fc animated:YES];
     }
     
-    //点击第二个进入朋友圈详情界面
+    //点击非第一个个进入朋友圈详情界面
     else{
         XiangqingController *xqc = [[XiangqingController alloc]init];
         [self.navigationController pushViewController:xqc animated:YES];

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>time</key>
+		<string>昨天</string>
+		<key>information</key>
+		<string>入手紫色 iPhone 12、AirTag 正当季</string>
+		<key>contactsImage</key>
+		<string>Apple</string>
+		<key>contacts</key>
+		<string>Apple</string>
+	</dict>
+	<dict>
+		<key>time</key>
+		<string>昨天</string>
+		<key>information</key>
+		<string>微信支付凭证</string>
+		<key>contactsImage</key>
+		<string>Fuwu</string>
+		<key>contacts</key>
+		<string>服务通知</string>
+	</dict>
+	<dict>
+		<key>time</key>
+		<string>昨天</string>
+		<key>information</key>
+		<string>登录操作通知</string>
+		<key>contactsImage</key>
+		<string>WeChat</string>
+		<key>contacts</key>
+		<string>微信团队</string>
+	</dict>
+</array>
+</plist>

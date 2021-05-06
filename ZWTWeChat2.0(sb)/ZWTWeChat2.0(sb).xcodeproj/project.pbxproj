@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4922EB642642EF9E004C5D3E /* MessageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4922EB632642EF9E004C5D3E /* MessageData.m */; };
+		4922EB6B2642F8A7004C5D3E /* WeChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4922EB6A2642F8A7004C5D3E /* WeChatViewController.m */; };
+		4922EB6E2642FC22004C5D3E /* MessageData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4922EB6D2642FC22004C5D3E /* MessageData.plist */; };
+		4928940F26445C38009B1951 /* FabuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4928940E26445C38009B1951 /* FabuController.m */; };
+		492894152644603D009B1951 /* XiangqingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492894142644603D009B1951 /* XiangqingController.m */; };
+		4930E9BB2643C5CC00E7B135 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4930E9B92643C5CC00E7B135 /* MessageCell.m */; };
+		4930E9BC2643C5CC00E7B135 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4930E9BA2643C5CC00E7B135 /* MessageCell.xib */; };
+		4930E9C62643CCC900E7B135 /* ContactsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4930E9C42643CCC900E7B135 /* ContactsCell.m */; };
+		4930E9C72643CCC900E7B135 /* ContactsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4930E9C52643CCC900E7B135 /* ContactsCell.xib */; };
+		4930E9D02643D18500E7B135 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4930E9CF2643D18500E7B135 /* ContactsViewController.m */; };
+		4974CA392644388E00599D0A /* FinderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4974CA382644388E00599D0A /* FinderController.m */; };
+		4974CA3D2644390C00599D0A /* FinderData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4974CA3C2644390C00599D0A /* FinderData.m */; };
+		4974CA422644392B00599D0A /* FinderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4974CA402644392B00599D0A /* FinderCell.m */; };
+		4974CA432644392B00599D0A /* FinderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4974CA412644392B00599D0A /* FinderCell.xib */; };
+		4974CA46264439C900599D0A /* Finder.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4974CA45264439C900599D0A /* Finder.plist */; };
+		49D346D02643D611002A1DA5 /* ContactsData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49D346CF2643D611002A1DA5 /* ContactsData.plist */; };
+		49D346D42643D675002A1DA5 /* ContactsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D346D32643D675002A1DA5 /* ContactsData.m */; };
+		49FBFD4226429B4F0009272A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FBFD4126429B4F0009272A /* AppDelegate.m */; };
+		49FBFD4526429B4F0009272A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FBFD4426429B4F0009272A /* SceneDelegate.m */; };
+		49FBFD4B26429B4F0009272A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49FBFD4926429B4F0009272A /* Main.storyboard */; };
+		49FBFD4D26429B500009272A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49FBFD4C26429B500009272A /* Assets.xcassets */; };
+		49FBFD5026429B500009272A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49FBFD4E26429B500009272A /* LaunchScreen.storyboard */; };
+		49FBFD5326429B500009272A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FBFD5226429B500009272A /* main.m */; };
+		49FBFD5D26429DF50009272A /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FBFD5C26429DF50009272A /* TabBarViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4922EB622642EF9E004C5D3E /* MessageData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageData.h; sourceTree = "<group>"; };
+		4922EB632642EF9E004C5D3E /* MessageData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageData.m; sourceTree = "<group>"; };
+		4922EB692642F8A7004C5D3E /* WeChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeChatViewController.h; sourceTree = "<group>"; };
+		4922EB6A2642F8A7004C5D3E /* WeChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeChatViewController.m; sourceTree = "<group>"; };
+		4922EB6D2642FC22004C5D3E /* MessageData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MessageData.plist; sourceTree = "<group>"; };
+		4928940D26445C38009B1951 /* FabuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FabuController.h; sourceTree = "<group>"; };
+		4928940E26445C38009B1951 /* FabuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FabuController.m; sourceTree = "<group>"; };
+		492894132644603D009B1951 /* XiangqingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XiangqingController.h; sourceTree = "<group>"; };
+		492894142644603D009B1951 /* XiangqingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XiangqingController.m; sourceTree = "<group>"; };
+		4930E9B82643C5CC00E7B135 /* MessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
+		4930E9B92643C5CC00E7B135 /* MessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		4930E9BA2643C5CC00E7B135 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		4930E9C32643CCC900E7B135 /* ContactsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsCell.h; sourceTree = "<group>"; };
+		4930E9C42643CCC900E7B135 /* ContactsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsCell.m; sourceTree = "<group>"; };
+		4930E9C52643CCC900E7B135 /* ContactsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactsCell.xib; sourceTree = "<group>"; };
+		4930E9CE2643D18500E7B135 /* ContactsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		4930E9CF2643D18500E7B135 /* ContactsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		4974CA372644388E00599D0A /* FinderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinderController.h; sourceTree = "<group>"; };
+		4974CA382644388E00599D0A /* FinderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinderController.m; sourceTree = "<group>"; };
+		4974CA3B2644390C00599D0A /* FinderData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinderData.h; sourceTree = "<group>"; };
+		4974CA3C2644390C00599D0A /* FinderData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinderData.m; sourceTree = "<group>"; };
+		4974CA3F2644392B00599D0A /* FinderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinderCell.h; sourceTree = "<group>"; };
+		4974CA402644392B00599D0A /* FinderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinderCell.m; sourceTree = "<group>"; };
+		4974CA412644392B00599D0A /* FinderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinderCell.xib; sourceTree = "<group>"; };
+		4974CA45264439C900599D0A /* Finder.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Finder.plist; sourceTree = "<group>"; };
+		49D346CF2643D611002A1DA5 /* ContactsData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ContactsData.plist; sourceTree = "<group>"; };
+		49D346D22643D675002A1DA5 /* ContactsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsData.h; sourceTree = "<group>"; };
+		49D346D32643D675002A1DA5 /* ContactsData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsData.m; sourceTree = "<group>"; };
+		49FBFD3D26429B4F0009272A /* ZWTWeChat2.0(sb).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZWTWeChat2.0(sb).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49FBFD4026429B4F0009272A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		49FBFD4126429B4F0009272A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		49FBFD4326429B4F0009272A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		49FBFD4426429B4F0009272A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		49FBFD4A26429B4F0009272A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49FBFD4C26429B500009272A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49FBFD4F26429B500009272A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49FBFD5126429B500009272A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49FBFD5226429B500009272A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49FBFD5B26429DF50009272A /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		49FBFD5C26429DF50009272A /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49FBFD3A26429B4F0009272A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49069FC02642BA7800221B64 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		49069FC62642BAA400221B64 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				49FBFD4026429B4F0009272A /* AppDelegate.h */,
+				49FBFD4126429B4F0009272A /* AppDelegate.m */,
+				49FBFD4326429B4F0009272A /* SceneDelegate.h */,
+				49FBFD4426429B4F0009272A /* SceneDelegate.m */,
+				49FBFD4926429B4F0009272A /* Main.storyboard */,
+				49FBFD4C26429B500009272A /* Assets.xcassets */,
+				49FBFD4E26429B500009272A /* LaunchScreen.storyboard */,
+				49FBFD5226429B500009272A /* main.m */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		4922EB612642EF7C004C5D3E /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				4922EB622642EF9E004C5D3E /* MessageData.h */,
+				4922EB632642EF9E004C5D3E /* MessageData.m */,
+				4922EB692642F8A7004C5D3E /* WeChatViewController.h */,
+				4922EB6A2642F8A7004C5D3E /* WeChatViewController.m */,
+				4922EB6D2642FC22004C5D3E /* MessageData.plist */,
+				4930E9B82643C5CC00E7B135 /* MessageCell.h */,
+				4930E9B92643C5CC00E7B135 /* MessageCell.m */,
+				4930E9BA2643C5CC00E7B135 /* MessageCell.xib */,
+			);
+			path = WeChat;
+			sourceTree = "<group>";
+		};
+		4922EB672642F7B0004C5D3E /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				49FBFD5B26429DF50009272A /* TabBarViewController.h */,
+				49FBFD5C26429DF50009272A /* TabBarViewController.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		4928940C26445B89009B1951 /* FabuDongtai */ = {
+			isa = PBXGroup;
+			children = (
+				4928940D26445C38009B1951 /* FabuController.h */,
+				4928940E26445C38009B1951 /* FabuController.m */,
+			);
+			path = FabuDongtai;
+			sourceTree = "<group>";
+		};
+		4928941226446011009B1951 /* Dongtaixiangqing */ = {
+			isa = PBXGroup;
+			children = (
+				492894132644603D009B1951 /* XiangqingController.h */,
+				492894142644603D009B1951 /* XiangqingController.m */,
+			);
+			path = Dongtaixiangqing;
+			sourceTree = "<group>";
+		};
+		4930E9C12643CC9400E7B135 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				4930E9C32643CCC900E7B135 /* ContactsCell.h */,
+				4930E9C42643CCC900E7B135 /* ContactsCell.m */,
+				4930E9C52643CCC900E7B135 /* ContactsCell.xib */,
+				4930E9CE2643D18500E7B135 /* ContactsViewController.h */,
+				4930E9CF2643D18500E7B135 /* ContactsViewController.m */,
+				49D346CF2643D611002A1DA5 /* ContactsData.plist */,
+				49D346D22643D675002A1DA5 /* ContactsData.h */,
+				49D346D32643D675002A1DA5 /* ContactsData.m */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		49D346D62643DC86002A1DA5 /* Finder */ = {
+			isa = PBXGroup;
+			children = (
+				4928941226446011009B1951 /* Dongtaixiangqing */,
+				4928940C26445B89009B1951 /* FabuDongtai */,
+				4974CA372644388E00599D0A /* FinderController.h */,
+				4974CA382644388E00599D0A /* FinderController.m */,
+				4974CA3B2644390C00599D0A /* FinderData.h */,
+				4974CA3C2644390C00599D0A /* FinderData.m */,
+				4974CA3F2644392B00599D0A /* FinderCell.h */,
+				4974CA402644392B00599D0A /* FinderCell.m */,
+				4974CA412644392B00599D0A /* FinderCell.xib */,
+				4974CA45264439C900599D0A /* Finder.plist */,
+			);
+			path = Finder;
+			sourceTree = "<group>";
+		};
+		49FBFD3426429B4F0009272A = {
+			isa = PBXGroup;
+			children = (
+				49FBFD3F26429B4F0009272A /* ZWTWeChat2.0(sb) */,
+				4922EB672642F7B0004C5D3E /* TabBar */,
+				49FBFD3E26429B4F0009272A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49FBFD3E26429B4F0009272A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49FBFD3D26429B4F0009272A /* ZWTWeChat2.0(sb).app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49FBFD3F26429B4F0009272A /* ZWTWeChat2.0(sb) */ = {
+			isa = PBXGroup;
+			children = (
+				49D346D62643DC86002A1DA5 /* Finder */,
+				4930E9C12643CC9400E7B135 /* Contacts */,
+				4922EB612642EF7C004C5D3E /* WeChat */,
+				49069FC02642BA7800221B64 /* Me */,
+				49FBFD5126429B500009272A /* Info.plist */,
+				49069FC62642BAA400221B64 /* Support Files */,
+			);
+			path = "ZWTWeChat2.0(sb)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49FBFD3C26429B4F0009272A /* ZWTWeChat2.0(sb) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49FBFD5626429B500009272A /* Build configuration list for PBXNativeTarget "ZWTWeChat2.0(sb)" */;
+			buildPhases = (
+				49FBFD3926429B4F0009272A /* Sources */,
+				49FBFD3A26429B4F0009272A /* Frameworks */,
+				49FBFD3B26429B4F0009272A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZWTWeChat2.0(sb)";
+			productName = "ZWTWeChat2.0(sb)";
+			productReference = 49FBFD3D26429B4F0009272A /* ZWTWeChat2.0(sb).app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49FBFD3526429B4F0009272A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					49FBFD3C26429B4F0009272A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 49FBFD3826429B4F0009272A /* Build configuration list for PBXProject "ZWTWeChat2.0(sb)" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49FBFD3426429B4F0009272A;
+			productRefGroup = 49FBFD3E26429B4F0009272A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49FBFD3C26429B4F0009272A /* ZWTWeChat2.0(sb) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49FBFD3B26429B4F0009272A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4930E9C72643CCC900E7B135 /* ContactsCell.xib in Resources */,
+				4930E9BC2643C5CC00E7B135 /* MessageCell.xib in Resources */,
+				49FBFD5026429B500009272A /* LaunchScreen.storyboard in Resources */,
+				49FBFD4D26429B500009272A /* Assets.xcassets in Resources */,
+				4922EB6E2642FC22004C5D3E /* MessageData.plist in Resources */,
+				49FBFD4B26429B4F0009272A /* Main.storyboard in Resources */,
+				4974CA46264439C900599D0A /* Finder.plist in Resources */,
+				49D346D02643D611002A1DA5 /* ContactsData.plist in Resources */,
+				4974CA432644392B00599D0A /* FinderCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49FBFD3926429B4F0009272A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4930E9C62643CCC900E7B135 /* ContactsCell.m in Sources */,
+				49FBFD5D26429DF50009272A /* TabBarViewController.m in Sources */,
+				492894152644603D009B1951 /* XiangqingController.m in Sources */,
+				49FBFD4226429B4F0009272A /* AppDelegate.m in Sources */,
+				4922EB6B2642F8A7004C5D3E /* WeChatViewController.m in Sources */,
+				4974CA422644392B00599D0A /* FinderCell.m in Sources */,
+				49D346D42643D675002A1DA5 /* ContactsData.m in Sources */,
+				4974CA3D2644390C00599D0A /* FinderData.m in Sources */,
+				4928940F26445C38009B1951 /* FabuController.m in Sources */,
+				49FBFD5326429B500009272A /* main.m in Sources */,
+				4922EB642642EF9E004C5D3E /* MessageData.m in Sources */,
+				4930E9BB2643C5CC00E7B135 /* MessageCell.m in Sources */,
+				4930E9D02643D18500E7B135 /* ContactsViewController.m in Sources */,
+				49FBFD4526429B4F0009272A /* SceneDelegate.m in Sources */,
+				4974CA392644388E00599D0A /* FinderController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		49FBFD4926429B4F0009272A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49FBFD4A26429B4F0009272A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49FBFD4E26429B500009272A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49FBFD4F26429B500009272A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49FBFD5426429B500009272A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		49FBFD5526429B500009272A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49FBFD5726429B500009272A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XXQ7M2A3K6;
+				INFOPLIST_FILE = "ZWTWeChat2.0(sb)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "team.redrock.ZWTWeChat2-0-sb-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49FBFD5826429B500009272A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XXQ7M2A3K6;
+				INFOPLIST_FILE = "ZWTWeChat2.0(sb)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "team.redrock.ZWTWeChat2-0-sb-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49FBFD3826429B4F0009272A /* Build configuration list for PBXProject "ZWTWeChat2.0(sb)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49FBFD5426429B500009272A /* Debug */,
+				49FBFD5526429B500009272A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49FBFD5626429B500009272A /* Build configuration list for PBXNativeTarget "ZWTWeChat2.0(sb)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49FBFD5726429B500009272A /* Debug */,
+				49FBFD5826429B500009272A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49FBFD3526429B4F0009272A /* Project object */;
+}

@@ -73,7 +73,11 @@
     return 79;
 }
 
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
+    
+    //隐藏tabbar
+    self.tabBarController.tabBar.hidden = YES;
     
     //点击第一个进入发布界面
     if (indexPath.row == 0) {

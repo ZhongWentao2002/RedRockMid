@@ -38,26 +38,33 @@
 }
 
 # pragma mark - messageListTV的数据源方法
+//设置多少组
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
+//每组多少行
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.messageArray.count;
 }
+//创建单元格
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
+    //获取模型数据
     ZWTMessageData *data = self.messageArray[indexPath.row];
+    //从xib加载Cell
     ZWTMessageCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"ZWTMessageCell" owner:nil options:nil]firstObject];
+    //给Cell赋值
     cell.contact.text = data.contacts;
     [cell.image setImage:[UIImage imageNamed:data.contactsImage]];
     cell.information.text = data.information;
     cell.time.text = data.time;
+    //返回Cell
     return  cell;
 }
 
 # pragma mark - messageListTV的代理方法
+//设置Cell的高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 60;
+    return 68;
 }
 # pragma mark - 懒加载数据
 - (NSArray *)messageArray{

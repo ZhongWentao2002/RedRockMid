@@ -54,6 +54,7 @@
     return cell;
 }
 # pragma mark -contactsListTV的代理方法
+//设置行高
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 56;
 }

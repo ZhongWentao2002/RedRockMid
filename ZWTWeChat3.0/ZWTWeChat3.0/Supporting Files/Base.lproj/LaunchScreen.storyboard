@@ -16,44 +16,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xa2-9l-WVw">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qidong" translatesAutoresizingMaskIntoConstraints="NO" id="ejN-bd-ERB">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="经费不足，没有界面" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ol1-Qm-7aF">
-                                        <rect key="frame" x="51" y="315.5" width="273" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                <constraints>
-                                    <constraint firstItem="ol1-Qm-7aF" firstAttribute="centerX" secondItem="xa2-9l-WVw" secondAttribute="centerX" id="Zfg-oZ-wYY"/>
-                                    <constraint firstItem="ol1-Qm-7aF" firstAttribute="centerY" secondItem="xa2-9l-WVw" secondAttribute="centerY" id="wej-Gt-fEP"/>
-                                </constraints>
-                            </view>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="xa2-9l-WVw" secondAttribute="bottom" id="WbI-X4-fi8"/>
-                            <constraint firstItem="xa2-9l-WVw" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="blj-bj-LH5"/>
-                            <constraint firstItem="xa2-9l-WVw" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="d1T-EG-xL6"/>
-                            <constraint firstAttribute="trailing" secondItem="xa2-9l-WVw" secondAttribute="trailing" id="eRE-th-xIu"/>
+                            <constraint firstAttribute="bottom" secondItem="ejN-bd-ERB" secondAttribute="bottom" id="9vC-nv-UiO"/>
+                            <constraint firstAttribute="trailing" secondItem="ejN-bd-ERB" secondAttribute="trailing" id="Lbk-mT-Vau"/>
+                            <constraint firstItem="ejN-bd-ERB" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="klf-cG-eKP"/>
+                            <constraint firstItem="ejN-bd-ERB" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="tvj-qV-xtd"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="105" y="306"/>
         </scene>
     </scenes>
     <resources>
+        <image name="qidong" width="375" height="667"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

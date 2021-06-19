@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		13A0622B85A802B7ACBEB06F /* Pods_ZWTWeChat3_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5550EFCBB3CFA90B0CF895 /* Pods_ZWTWeChat3_0.framework */; };
+		4939DBC8267D2CBB006A4BB9 /* ZWTMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4939DBC7267D2CBB006A4BB9 /* ZWTMeTableViewController.m */; };
 		4963A1E1264CF1F4005F4FBF /* ZWTMessageData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4963A1E0264CF1F4005F4FBF /* ZWTMessageData.plist */; };
-		4963A1E4264CF201005F4FBF /* Explore.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4963A1E3264CF201005F4FBF /* Explore.plist */; };
 		4963A1E7264CF20F005F4FBF /* ZWTContactsData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4963A1E6264CF20F005F4FBF /* ZWTContactsData.plist */; };
 		4989F733264CF9E900223ED9 /* ZWTWeChatPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4989F732264CF9E900223ED9 /* ZWTWeChatPageVC.m */; };
 		4989F737264CFA2900223ED9 /* ZWTMessageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4989F736264CFA2900223ED9 /* ZWTMessageData.m */; };
@@ -19,18 +19,23 @@
 		4989F74F264D17FF00223ED9 /* ZWTContactsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4989F74E264D17FF00223ED9 /* ZWTContactsVC.m */; };
 		4989F753264D1E1700223ED9 /* ZWTContactsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4989F752264D1E1700223ED9 /* ZWTContactsCell.xib */; };
 		4989F75A264D1E8700223ED9 /* ZWTContactsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4989F759264D1E8700223ED9 /* ZWTContactsCell.m */; };
+		4993A505267D40340051C236 /* ZWTMainTabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993A504267D40340051C236 /* ZWTMainTabbarVC.m */; };
+		4993A50C267D41700051C236 /* ZWTLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993A50B267D41700051C236 /* ZWTLoginVC.m */; };
 		49D87038264CE998005F9B23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D87037264CE998005F9B23 /* AppDelegate.m */; };
 		49D8703B264CE998005F9B23 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D8703A264CE998005F9B23 /* SceneDelegate.m */; };
 		49D87041264CE998005F9B23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D8703F264CE998005F9B23 /* Main.storyboard */; };
 		49D87043264CE99C005F9B23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D87042264CE99C005F9B23 /* Assets.xcassets */; };
 		49D87046264CE99C005F9B23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D87044264CE99C005F9B23 /* LaunchScreen.storyboard */; };
 		49D87049264CE99C005F9B23 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D87048264CE99C005F9B23 /* main.m */; };
+		49DEEE41267E4F9600E7D714 /* ZWTImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEEE40267E4F9600E7D714 /* ZWTImageCache.m */; };
+		49DEEE47267E56B600E7D714 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DEEE46267E56B600E7D714 /* MyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1F5550EFCBB3CFA90B0CF895 /* Pods_ZWTWeChat3_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZWTWeChat3_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4939DBC6267D2CBB006A4BB9 /* ZWTMeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWTMeTableViewController.h; sourceTree = "<group>"; };
+		4939DBC7267D2CBB006A4BB9 /* ZWTMeTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWTMeTableViewController.m; sourceTree = "<group>"; };
 		4963A1E0264CF1F4005F4FBF /* ZWTMessageData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ZWTMessageData.plist; sourceTree = "<group>"; };
-		4963A1E3264CF201005F4FBF /* Explore.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Explore.plist; sourceTree = "<group>"; };
 		4963A1E6264CF20F005F4FBF /* ZWTContactsData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ZWTContactsData.plist; sourceTree = "<group>"; };
 		4989F731264CF9E900223ED9 /* ZWTWeChatPageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWTWeChatPageVC.h; sourceTree = "<group>"; };
 		4989F732264CF9E900223ED9 /* ZWTWeChatPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWTWeChatPageVC.m; sourceTree = "<group>"; };
@@ -46,6 +51,10 @@
 		4989F752264D1E1700223ED9 /* ZWTContactsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWTContactsCell.xib; sourceTree = "<group>"; };
 		4989F758264D1E8700223ED9 /* ZWTContactsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWTContactsCell.h; sourceTree = "<group>"; };
 		4989F759264D1E8700223ED9 /* ZWTContactsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWTContactsCell.m; sourceTree = "<group>"; };
+		4993A503267D40340051C236 /* ZWTMainTabbarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWTMainTabbarVC.h; sourceTree = "<group>"; };
+		4993A504267D40340051C236 /* ZWTMainTabbarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWTMainTabbarVC.m; sourceTree = "<group>"; };
+		4993A50A267D41700051C236 /* ZWTLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWTLoginVC.h; sourceTree = "<group>"; };
+		4993A50B267D41700051C236 /* ZWTLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWTLoginVC.m; sourceTree = "<group>"; };
 		49D87033264CE998005F9B23 /* ZWTWeChat3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZWTWeChat3.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D87036264CE998005F9B23 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		49D87037264CE998005F9B23 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,6 +65,10 @@
 		49D87045264CE99C005F9B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49D87047264CE99C005F9B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49D87048264CE99C005F9B23 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49DEEE3F267E4F9600E7D714 /* ZWTImageCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWTImageCache.h; sourceTree = "<group>"; };
+		49DEEE40267E4F9600E7D714 /* ZWTImageCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWTImageCache.m; sourceTree = "<group>"; };
+		49DEEE45267E56B600E7D714 /* MyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		49DEEE46267E56B600E7D714 /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		9893FADB4E06841DFBEB6BC8 /* Pods-ZWTWeChat3.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZWTWeChat3.0.debug.xcconfig"; path = "Target Support Files/Pods-ZWTWeChat3.0/Pods-ZWTWeChat3.0.debug.xcconfig"; sourceTree = "<group>"; };
 		C47F59A4D2384704DAE87203 /* Pods-ZWTWeChat3.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZWTWeChat3.0.release.xcconfig"; path = "Target Support Files/Pods-ZWTWeChat3.0/Pods-ZWTWeChat3.0.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,7 +122,8 @@
 		4963A1EB264CF31C005F4FBF /* ZWTExplore */ = {
 			isa = PBXGroup;
 			children = (
-				4963A1E3264CF201005F4FBF /* Explore.plist */,
+				49DEEE45267E56B600E7D714 /* MyViewController.h */,
+				49DEEE46267E56B600E7D714 /* MyViewController.m */,
 			);
 			path = ZWTExplore;
 			sourceTree = "<group>";
@@ -117,6 +131,8 @@
 		4963A1EC264CF347005F4FBF /* ZWTMe */ = {
 			isa = PBXGroup;
 			children = (
+				4939DBC6267D2CBB006A4BB9 /* ZWTMeTableViewController.h */,
+				4939DBC7267D2CBB006A4BB9 /* ZWTMeTableViewController.m */,
 			);
 			path = ZWTMe;
 			sourceTree = "<group>";
@@ -179,6 +195,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		4993A500267D3F010051C236 /* ZWTLogin */ = {
+			isa = PBXGroup;
+			children = (
+				4993A50A267D41700051C236 /* ZWTLoginVC.h */,
+				4993A50B267D41700051C236 /* ZWTLoginVC.m */,
+			);
+			path = ZWTLogin;
+			sourceTree = "<group>";
+		};
+		4993A502267D40030051C236 /* ZWTMainTabbarVC */ = {
+			isa = PBXGroup;
+			children = (
+				4993A503267D40340051C236 /* ZWTMainTabbarVC.h */,
+				4993A504267D40340051C236 /* ZWTMainTabbarVC.m */,
+			);
+			path = ZWTMainTabbarVC;
+			sourceTree = "<group>";
+		};
 		49D8702A264CE998005F9B23 = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +234,9 @@
 		49D87035264CE998005F9B23 /* ZWTWeChat3.0 */ = {
 			isa = PBXGroup;
 			children = (
+				49DEEE3D267E4F6000E7D714 /* Tools */,
+				4993A502267D40030051C236 /* ZWTMainTabbarVC */,
+				4993A500267D3F010051C236 /* ZWTLogin */,
 				4963A1E9264CF2F3005F4FBF /* ZWTWeChat */,
 				4963A1EA264CF304005F4FBF /* ZWTContacts */,
 				4963A1EB264CF31C005F4FBF /* ZWTExplore */,
@@ -209,6 +246,23 @@
 				49D87047264CE99C005F9B23 /* Info.plist */,
 			);
 			path = ZWTWeChat3.0;
+			sourceTree = "<group>";
+		};
+		49DEEE3D267E4F6000E7D714 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				49DEEE3E267E4F7400E7D714 /* ZWTImageCache */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		49DEEE3E267E4F7400E7D714 /* ZWTImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				49DEEE3F267E4F9600E7D714 /* ZWTImageCache.h */,
+				49DEEE40267E4F9600E7D714 /* ZWTImageCache.m */,
+			);
+			path = ZWTImageCache;
 			sourceTree = "<group>";
 		};
 		4D21B082C6AB9C93261A8FFE /* Frameworks */ = {
@@ -291,7 +345,6 @@
 				4963A1E7264CF20F005F4FBF /* ZWTContactsData.plist in Resources */,
 				49D87043264CE99C005F9B23 /* Assets.xcassets in Resources */,
 				4963A1E1264CF1F4005F4FBF /* ZWTMessageData.plist in Resources */,
-				4963A1E4264CF201005F4FBF /* Explore.plist in Resources */,
 				4989F745264D0A1D00223ED9 /* ZWTMessageCell.xib in Resources */,
 				49D87041264CE998005F9B23 /* Main.storyboard in Resources */,
 			);
@@ -348,13 +401,18 @@
 			files = (
 				4989F733264CF9E900223ED9 /* ZWTWeChatPageVC.m in Sources */,
 				4989F740264D093500223ED9 /* ZWTMessageCell.m in Sources */,
+				4993A50C267D41700051C236 /* ZWTLoginVC.m in Sources */,
 				49D87038264CE998005F9B23 /* AppDelegate.m in Sources */,
 				4989F737264CFA2900223ED9 /* ZWTMessageData.m in Sources */,
 				4989F75A264D1E8700223ED9 /* ZWTContactsCell.m in Sources */,
+				49DEEE47267E56B600E7D714 /* MyViewController.m in Sources */,
 				49D87049264CE99C005F9B23 /* main.m in Sources */,
+				4993A505267D40340051C236 /* ZWTMainTabbarVC.m in Sources */,
 				49D8703B264CE998005F9B23 /* SceneDelegate.m in Sources */,
 				4989F74B264D114100223ED9 /* ZWTContactsData.m in Sources */,
+				49DEEE41267E4F9600E7D714 /* ZWTImageCache.m in Sources */,
 				4989F74F264D17FF00223ED9 /* ZWTContactsVC.m in Sources */,
+				4939DBC8267D2CBB006A4BB9 /* ZWTMeTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

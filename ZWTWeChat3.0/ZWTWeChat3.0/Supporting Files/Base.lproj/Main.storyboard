@@ -299,14 +299,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6h-bA-zw1">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6h-bA-zw1">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="退出登录">
                                                         <color key="titleColor" systemColor="systemRedColor"/>
                                                     </state>
                                                 </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="R6h-bA-zw1" firstAttribute="leading" secondItem="345-ej-7DV" secondAttribute="leading" id="A9M-yO-9v4"/>
+                                                <constraint firstItem="R6h-bA-zw1" firstAttribute="top" secondItem="345-ej-7DV" secondAttribute="top" id="IVN-g1-syN"/>
+                                                <constraint firstAttribute="trailing" secondItem="R6h-bA-zw1" secondAttribute="trailing" id="x2r-b8-f2p"/>
+                                                <constraint firstAttribute="bottom" secondItem="R6h-bA-zw1" secondAttribute="bottom" id="ztl-D6-v7W"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>

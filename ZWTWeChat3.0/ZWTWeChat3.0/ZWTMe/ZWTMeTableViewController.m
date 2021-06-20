@@ -70,7 +70,7 @@
 //登出
 - (void)logout{
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"退出登录" message:@"您确定要退出登录吗" preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *yes = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *yes = [UIAlertAction actionWithTitle:@"退出" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
         [self.navigationController popToRootViewControllerAnimated:NO];
         [[NSUserDefaults standardUserDefaults] setObject:@"NO" forKey:@"LoginStatus"];
     }];
@@ -89,9 +89,6 @@
 
 #pragma - mark PHPicker Delegate
 - (void)picker:(PHPickerViewController *)picker didFinishPicking:(NSArray<PHPickerResult *> *)results{
-    ZWTImageCache *cache = [[ZWTImageCache alloc]init];
-    //删除之前的数据
-    [cache deleteImageWithImageName:@"touxiang"];
     //picker消失时的操作
     [picker dismissViewControllerAnimated:YES completion:nil];
     //遍历
@@ -107,7 +104,9 @@
                     NSData *data = UIImagePNGRepresentation(object);
                     //新建工具
                     ZWTImageCache *cache = [[ZWTImageCache alloc]init];
-                    //存入数据
+                    //删除数据
+                    [cache deleteImageWithImageName:@"touxiang"];
+                    //写入新数据
                     [cache storeImage:data withImageName:@"touxiang"];
                 });
             }

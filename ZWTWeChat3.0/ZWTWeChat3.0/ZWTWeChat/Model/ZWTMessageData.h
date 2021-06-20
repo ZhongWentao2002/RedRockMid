@@ -9,12 +9,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-///聊天数据模型
+///消息模型
 @interface ZWTMessageData : NSObject
 
-///联系人名字
+///消息来源
 @property (nonatomic,copy) NSString *contacts;
-///联系人图片
+///消息头像
 @property (nonatomic,copy) NSString *contactsImage;
 ///最新消息
 @property (nonatomic,copy) NSString *information;

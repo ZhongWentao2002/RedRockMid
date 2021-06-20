@@ -1,5 +1,13 @@
 
 
+# 6.21
+
+1.新增登出时弹窗警告（UIAlertController）
+
+2.去掉多余的分割线（TableVIew）
+
+3.完善注释
+
 # 6.20
 
 1.新增本地伪登录（NSUserdefault）

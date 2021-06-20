@@ -9,11 +9,15 @@
 
 @implementation ZWTContactsData
 + (instancetype)ContactsDatawithDict:(NSDictionary *)dict{
+    //新建模型对象
     ZWTContactsData *Data = [self new];
+    //KVC
     [Data setValuesForKeysWithDictionary:dict];
     return Data;
 }
 
+
+///防崩溃
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key{
 }
 

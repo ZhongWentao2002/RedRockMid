@@ -10,7 +10,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZWTContactsCell : UITableViewCell
+///联系人头像
 @property (strong, nonatomic) IBOutlet UIImageView *image;
+///联系人名字
 @property (strong, nonatomic) IBOutlet UILabel *name;
 
 @end

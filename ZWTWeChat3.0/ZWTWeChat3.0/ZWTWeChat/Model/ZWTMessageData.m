@@ -10,10 +10,13 @@
 @implementation ZWTMessageData
 
 + (instancetype)MessageDatawithDict:(NSDictionary *)dict{
+    //新建模型对象
     ZWTMessageData *message = [self new];
+    //KVC
     [message setValuesForKeysWithDictionary:dict];
     return message;
 }
+//防崩溃
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key{
 }
 

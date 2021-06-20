@@ -9,6 +9,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ 自定义缓存图片工具，基于 NSFileManager
+ */
 @interface ZWTImageCache : NSObject
 ///存储图片到本地
 - (void)storeImage:(NSData *)imageData withImageName:(NSString *)ImageName;

@@ -34,6 +34,7 @@
 # pragma mark - life cycle
 # pragma mark ViewDidLoad
     [super viewDidLoad];
+    //加载子控件
     [self loadMessageListTV];
 }
 
@@ -52,6 +53,7 @@
     ZWTMessageData *data = self.messageArray[indexPath.row];
     //从xib加载Cell
     ZWTMessageCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"ZWTMessageCell" owner:nil options:nil]firstObject];
+
     //给Cell赋值
     cell.contact.text = data.contacts;
     [cell.image setImage:[UIImage imageNamed:data.contactsImage]];
@@ -77,6 +79,7 @@
     _arrayModel = [NSMutableArray array];
     //遍历存字典的数组，获得其中的字典（dict），调用字典转模型
     for (NSDictionary *dict in arrayDict) {
+        //创建模型
         ZWTMessageData *Data = [ZWTMessageData MessageDatawithDict:dict];
         //每获得一个模型，往arrayModel里写入一个模型
         [_arrayModel addObject:Data];
@@ -91,6 +94,10 @@
 - (void)loadMessageListTV{
 //初始化
 self.messageListTV = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+//去除多余的分割线
+UIView *view = [[UIView alloc]init];
+view.backgroundColor = [UIColor clearColor];
+self.messageListTV.tableFooterView = view;
 //设置数据源对象
 self.messageListTV.dataSource = self;
 //设置代理对象

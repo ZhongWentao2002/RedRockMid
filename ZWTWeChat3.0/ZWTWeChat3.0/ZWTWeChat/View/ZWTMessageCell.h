@@ -10,9 +10,14 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZWTMessageCell : UITableViewCell
+
+///消息头像
 @property (strong, nonatomic) IBOutlet UIImageView *image;
+///消息来源
 @property (strong, nonatomic) IBOutlet UILabel *contact;
+///最后一条消息
 @property (strong, nonatomic) IBOutlet UILabel *information;
+///时间
 @property (strong, nonatomic) IBOutlet UILabel *time;
 
 

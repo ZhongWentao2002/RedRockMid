@@ -28,13 +28,7 @@
         NSString *filePath = [NSString stringWithFormat:@"%@/%@.png",createPath,ImageName];
         
         [[NSFileManager defaultManager] createFileAtPath:filePath contents:imageData attributes:nil];
-        
-    
-    
-    
     }
-    
-    
 }
 
 - (NSData *)getImageWithImageName:(NSString *)ImageName{

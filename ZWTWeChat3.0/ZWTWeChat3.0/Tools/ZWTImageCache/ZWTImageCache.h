@@ -15,10 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ZWTImageCache : NSObject
 ///存储图片到本地
 - (void)storeImage:(NSData *)imageData withImageName:(NSString *)ImageName;
-
 /// 获取本地图片
 - (NSData *)getImageWithImageName:(NSString *)ImageName;
-
 ///删除本地图片
 - (void)deleteImageWithImageName:(NSString *)ImageName;
 

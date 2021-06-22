@@ -1,5 +1,17 @@
 
 
+# 6.23
+
+1.朋友圈右侧按钮进入发布界面
+
+2.内容为0时，发布按钮不可用，颜色为灰色
+
+3.文字为0时，显示自定义的Placeholder
+
+4.输入文字，文字长度不为0，不显示Placeholder
+
+5.整个发布界面基于UIScrollview，滑动时停止TextView编辑
+
 # 6.21
 
 1.新增登出时弹窗警告（UIAlertController）

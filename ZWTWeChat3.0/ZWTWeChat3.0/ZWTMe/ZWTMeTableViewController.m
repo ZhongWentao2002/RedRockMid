@@ -74,9 +74,7 @@
         [self.navigationController popToRootViewControllerAnimated:NO];
         [[NSUserDefaults standardUserDefaults] setObject:@"NO" forKey:@"LoginStatus"];
     }];
-    
     UIAlertAction *no = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        
     }];
     
     [alert addAction:yes];

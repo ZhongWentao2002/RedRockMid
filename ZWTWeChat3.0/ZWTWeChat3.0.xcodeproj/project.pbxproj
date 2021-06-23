@@ -24,6 +24,7 @@
 		4989F75A264D1E8700223ED9 /* ZWTContactsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4989F759264D1E8700223ED9 /* ZWTContactsCell.m */; };
 		4993A505267D40340051C236 /* ZWTMainTabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993A504267D40340051C236 /* ZWTMainTabbarVC.m */; };
 		4993A50C267D41700051C236 /* ZWTLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4993A50B267D41700051C236 /* ZWTLoginVC.m */; };
+		49B715F72683925400EF14CF /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B715F62683925400EF14CF /* MyCollectionViewCell.m */; };
 		49D87038264CE998005F9B23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D87037264CE998005F9B23 /* AppDelegate.m */; };
 		49D8703B264CE998005F9B23 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D8703A264CE998005F9B23 /* SceneDelegate.m */; };
 		49D87041264CE998005F9B23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D8703F264CE998005F9B23 /* Main.storyboard */; };
@@ -63,6 +64,8 @@
 		4993A504267D40340051C236 /* ZWTMainTabbarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWTMainTabbarVC.m; sourceTree = "<group>"; };
 		4993A50A267D41700051C236 /* ZWTLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWTLoginVC.h; sourceTree = "<group>"; };
 		4993A50B267D41700051C236 /* ZWTLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWTLoginVC.m; sourceTree = "<group>"; };
+		49B715F52683925400EF14CF /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
+		49B715F62683925400EF14CF /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
 		49D87033264CE998005F9B23 /* ZWTWeChat3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZWTWeChat3.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D87036264CE998005F9B23 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		49D87037264CE998005F9B23 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -91,6 +94,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49530A8F26836F0C00FFB8A6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4956370D26822EC900539923 /* ZWTFabuVC.h */,
+				4956370E26822EC900539923 /* ZWTFabuVC.m */,
+				4956370F26822EC900539923 /* ZWTFabuVC.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		49530A9026836F1700FFB8A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		49530A9126836F1E00FFB8A6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		495636F62682253D00539923 /* ZWTPYQ */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,9 +131,9 @@
 		495636F72682254500539923 /* ZWTFabu */ = {
 			isa = PBXGroup;
 			children = (
-				4956370D26822EC900539923 /* ZWTFabuVC.h */,
-				4956370E26822EC900539923 /* ZWTFabuVC.m */,
-				4956370F26822EC900539923 /* ZWTFabuVC.xib */,
+				49530A9126836F1E00FFB8A6 /* Models */,
+				49530A9026836F1700FFB8A6 /* Views */,
+				49530A8F26836F0C00FFB8A6 /* Controllers */,
 			);
 			path = ZWTFabu;
 			sourceTree = "<group>";
@@ -123,6 +150,8 @@
 		495636F92682258D00539923 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				49B715F52683925400EF14CF /* MyCollectionViewCell.h */,
+				49B715F62683925400EF14CF /* MyCollectionViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -464,6 +493,7 @@
 				49DEEE41267E4F9600E7D714 /* ZWTImageCache.m in Sources */,
 				4989F74F264D17FF00223ED9 /* ZWTContactsVC.m in Sources */,
 				4939DBC8267D2CBB006A4BB9 /* ZWTMeTableViewController.m in Sources */,
+				49B715F72683925400EF14CF /* MyCollectionViewCell.m in Sources */,
 				495636FD268225CF00539923 /* ZWTPYQVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

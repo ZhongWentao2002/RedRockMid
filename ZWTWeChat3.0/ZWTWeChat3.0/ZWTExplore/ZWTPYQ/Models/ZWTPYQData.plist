@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>photo_count</key>
+		<integer>2</integer>
+		<key>Users</key>
+		<string>Tim Cook</string>
+		<key>mianTextLbl</key>
+		<string>现在 Mac 又该向前大步跃进了，因为今天我们要宣布 Mac 将转换到我们自己的 Apple 芯片</string>
+	</dict>
+	<dict>
+		<key>photo_count</key>
+		<integer>0</integer>
+		<key>Users</key>
+		<string>Jony Ive</string>
+		<key>mianTextLbl</key>
+		<string>要设计出真正令人耳目一新的产品，你必须重新开始，这需要极大的决心，才能彻底摆脱过去的思路</string>
+	</dict>
+	<dict>
+		<key>photo_count</key>
+		<integer>0</integer>
+		<key>Users</key>
+		<string>Steve Jobs</string>
+		<key>mianTextLbl</key>
+		<string>领袖和跟风者的区别就在于创新。</string>
+	</dict>
+</array>
+</plist>

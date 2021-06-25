@@ -21,9 +21,10 @@
 @property (nonatomic,strong) UILabel *placeholder;
 @property (strong, nonatomic) IBOutlet UIButton *cancelBtn;
 @property (strong, nonatomic) IBOutlet UIButton *fabuBtn;
-@property (nonatomic,strong) NSMutableArray *photoAry;
+
 @property (nonatomic,strong) UIImage *AddImg;
 @property (nonatomic,strong) UICollectionView *cv;
+
 
 
 @end
@@ -32,7 +33,6 @@
 
 
 - (void)viewWillAppear:(BOOL)animated{
-
     self.navigationController.navigationBar.hidden = YES;
     self.tabBarController.tabBar.hidden = YES;
 
@@ -42,6 +42,7 @@
 
     self.fabuBtn.backgroundColor = [UIColor systemGray2Color];
     self.fabuBtn.enabled = NO;
+    [self.fabuBtn addTarget:self action:@selector(popAndFabu) forControlEvents:UIControlEventTouchUpInside];
     [self.cancelBtn addTarget:self action:@selector(pop) forControlEvents:UIControlEventTouchUpInside];
     self.scrollView = [[UIScrollView alloc]initWithFrame:CGRectZero];
     self.scrollView.contentSize = CGSizeMake(MAIN_SCREEN_W, MAIN_SCREEN_H - 53);
@@ -100,9 +101,42 @@
 }
 
 - (void)pop{
+    if (!(self.photoAry.count == 1 && self.textView.text.length == 0)) {
+        
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"退出编辑" message:@"您想保存已编辑的内容吗" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *yes = [UIAlertAction actionWithTitle:@"是" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+            [self.navigationController popViewControllerAnimated:YES];
+            self.navigationController.navigationBar.hidden = NO;
+            self.tabBarController.tabBar.hidden = NO;
+            NSArray *cacheArray = self.photoAry;
+            NSString *cachetext = self.textView.text;
+        }];
+        UIAlertAction *no = [UIAlertAction actionWithTitle:@"否" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            [self.navigationController popViewControllerAnimated:YES];
+            self.navigationController.navigationBar.hidden = NO;
+            self.tabBarController.tabBar.hidden = NO;
+        }];
+        
+        [alert addAction:yes];
+        [alert addAction:no];
+        
+        [self presentViewController:alert animated:YES completion:nil];
+        
+
+    }
+    else{
+        [self.navigationController popViewControllerAnimated:YES];
+        self.navigationController.navigationBar.hidden = NO;
+        self.tabBarController.tabBar.hidden = NO;
+    }
+}
+- (void)popAndFabu{
     [self.navigationController popViewControllerAnimated:YES];
     self.navigationController.navigationBar.hidden = NO;
     self.tabBarController.tabBar.hidden = NO;
+    NSArray *array = self.photoAry;
+    NSString *text = self.textView.text;
+    self.getData(array, text);
 }
 
 #pragma mark- dataSource:跟tableview非常相似
@@ -114,12 +148,9 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView*)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
     MyCollectionViewCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    if (indexPath.item == 0) {
-        cell.bgIamge.image = [UIImage imageNamed:@"AddImg"];
-    }
-    else{
+
         cell.bgIamge.image = self.photoAry[indexPath.item];
-    }
+
     return cell;
 }
 

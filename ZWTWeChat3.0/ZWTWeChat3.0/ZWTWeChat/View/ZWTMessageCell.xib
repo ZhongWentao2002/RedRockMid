@@ -65,7 +65,7 @@
                 <outlet property="information" destination="mwK-Im-hyk" id="oi8-ni-StB"/>
                 <outlet property="time" destination="APb-Wt-2XP" id="wYv-wl-jF2"/>
             </connections>
-            <point key="canvasLocation" x="76.811594202898561" y="-1.3392857142857142"/>
+            <point key="canvasLocation" x="0.0" y="-7"/>
         </tableViewCell>
     </objects>
     <resources>

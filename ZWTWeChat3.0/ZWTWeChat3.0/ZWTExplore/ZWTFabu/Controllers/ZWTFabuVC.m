@@ -10,6 +10,7 @@
 #import "PrefixHeader.pch"
 #import <PhotosUI/PHPicker.h>
 #import "MyCollectionViewCell.h"
+#import "ZWTImageCache.h"
 
 
 
@@ -36,24 +37,37 @@
     self.navigationController.navigationBar.hidden = YES;
     self.tabBarController.tabBar.hidden = YES;
 
+
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+    NSString *s = [def objectForKey:@"cachetext"];
+    NSInteger count = [def integerForKey:@"count"];
+    ZWTImageCache *cache = [[ZWTImageCache alloc]init];
+    
 
-    self.fabuBtn.backgroundColor = [UIColor systemGray2Color];
-    self.fabuBtn.enabled = NO;
+
+    
     [self.fabuBtn addTarget:self action:@selector(popAndFabu) forControlEvents:UIControlEventTouchUpInside];
     [self.cancelBtn addTarget:self action:@selector(pop) forControlEvents:UIControlEventTouchUpInside];
+    
+    
     self.scrollView = [[UIScrollView alloc]initWithFrame:CGRectZero];
     self.scrollView.contentSize = CGSizeMake(MAIN_SCREEN_W, MAIN_SCREEN_H - 53);
     self.scrollView.delegate = self;
     self.textView = [[UITextView alloc]initWithFrame:CGRectMake(20, 60, MAIN_SCREEN_W - 40, 160)];
     self.textView.delegate = self;
+    
+    self.textView.text = s;
     [self.scrollView addSubview:self.textView];
     self.placeholder = [[UILabel alloc]initWithFrame:CGRectMake(20, 0, 200, 30)];
     self.placeholder.textColor = [UIColor systemGray4Color];
     self.placeholder.text = @"这一刻的想法...";
     [self.textView addSubview:self.placeholder];
+    if (!(self.textView.text.length == 0)) {
+        self.placeholder.hidden = YES;
+    }
     [self.view addSubview:self.scrollView];
     [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.offset(60);
@@ -61,7 +75,7 @@
     }];
     self.AddImg = [UIImage imageNamed:@"AddImg"];
     self.photoAry = [[NSMutableArray alloc]initWithCapacity:9];
-    [self.photoAry addObject:self.AddImg];
+    
     
     //1创建布局类
     UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc]init];
@@ -82,6 +96,27 @@
     self.cv.dataSource = self;
     //注册cell
     [self.cv registerClass:[MyCollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+    
+    
+    if (self.textView.text.length == 0) {
+        self.fabuBtn.enabled = NO;
+        self.fabuBtn.backgroundColor = [UIColor systemGray2Color];
+    }
+    NSMutableArray * mArray = [[NSMutableArray alloc]initWithCapacity:9];
+    for (int i = 0; i < count; i++) {
+        
+        NSData * data = [cache getImageWithImageName:[NSString stringWithFormat:@"cache%d",i]];
+        UIImage *img = [UIImage imageWithData:data];
+        [mArray addObject:img];
+    }
+    if (count == 0) {
+        [self.photoAry addObject:self.AddImg];
+        [self.cv reloadData];
+    }
+    else{
+        self.photoAry = mArray;
+        [self.cv reloadData];
+    }
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
@@ -90,6 +125,7 @@
 - (void)textViewDidChange:(UITextView *)textView{
     if (textView.text.length == 0) {
         self.placeholder.frame = CGRectMake(20, 0, 200, 30);
+        self.placeholder.hidden = NO;
         self.fabuBtn.backgroundColor = [UIColor systemGray2Color];
         self.fabuBtn.enabled = NO;
     }
@@ -104,14 +140,27 @@
     if (!(self.photoAry.count == 1 && self.textView.text.length == 0)) {
         
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"退出编辑" message:@"您想保存已编辑的内容吗" preferredStyle:UIAlertControllerStyleAlert];
-        UIAlertAction *yes = [UIAlertAction actionWithTitle:@"是" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertAction *yes = [UIAlertAction actionWithTitle:@"是" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            NSArray *cacheArray = self.photoAry;
+            NSString *cachetext = self.textView.text;
+            ZWTImageCache *cache =[[ZWTImageCache alloc]init];
+            for (int i = 0; i < cacheArray.count; i++) {
+                NSData *data = UIImagePNGRepresentation(cacheArray[i]);
+                [cache storeImage:data withImageName:[NSString stringWithFormat:@"cache%d",i]];
+            }
+            NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+            [def setInteger:cacheArray.count forKey:@"count"];
+            [def setObject:cachetext forKey:@"cachetext"];
             [self.navigationController popViewControllerAnimated:YES];
             self.navigationController.navigationBar.hidden = NO;
             self.tabBarController.tabBar.hidden = NO;
-            NSArray *cacheArray = self.photoAry;
-            NSString *cachetext = self.textView.text;
         }];
-        UIAlertAction *no = [UIAlertAction actionWithTitle:@"否" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertAction *no = [UIAlertAction actionWithTitle:@"否" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+            NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+        
+            
+            [def setObject:nil forKey:@"cachetext"];
+            [def setInteger:0 forKey:@"count"];
             [self.navigationController popViewControllerAnimated:YES];
             self.navigationController.navigationBar.hidden = NO;
             self.tabBarController.tabBar.hidden = NO;
@@ -125,6 +174,8 @@
 
     }
     else{
+        NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+        [def setObject:nil forKey:@"cachetext"];
         [self.navigationController popViewControllerAnimated:YES];
         self.navigationController.navigationBar.hidden = NO;
         self.tabBarController.tabBar.hidden = NO;

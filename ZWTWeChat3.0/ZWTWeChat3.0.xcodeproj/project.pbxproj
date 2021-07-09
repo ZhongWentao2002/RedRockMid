@@ -138,13 +138,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		49530A9126836F1E00FFB8A6 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		495636F62682253D00539923 /* ZWTPYQ */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +151,6 @@
 		495636F72682254500539923 /* ZWTFabu */ = {
 			isa = PBXGroup;
 			children = (
-				49530A9126836F1E00FFB8A6 /* Models */,
 				49530A9026836F1700FFB8A6 /* Views */,
 				49530A8F26836F0C00FFB8A6 /* Controllers */,
 			);
@@ -245,8 +237,7 @@
 		4963A1EC264CF347005F4FBF /* ZWTMe */ = {
 			isa = PBXGroup;
 			children = (
-				4939DBC6267D2CBB006A4BB9 /* ZWTMeTableViewController.h */,
-				4939DBC7267D2CBB006A4BB9 /* ZWTMeTableViewController.m */,
+				4990A77F2698A8EA0022EBF1 /* Controller */,
 			);
 			path = ZWTMe;
 			sourceTree = "<group>";
@@ -309,11 +300,37 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		4993A500267D3F010051C236 /* ZWTLogin */ = {
+		4990A77D2698A8970022EBF1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				4993A50A267D41700051C236 /* ZWTLoginVC.h */,
 				4993A50B267D41700051C236 /* ZWTLoginVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4990A77E2698A8BA0022EBF1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4993A503267D40340051C236 /* ZWTMainTabbarVC.h */,
+				4993A504267D40340051C236 /* ZWTMainTabbarVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4990A77F2698A8EA0022EBF1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4939DBC6267D2CBB006A4BB9 /* ZWTMeTableViewController.h */,
+				4939DBC7267D2CBB006A4BB9 /* ZWTMeTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4993A500267D3F010051C236 /* ZWTLogin */ = {
+			isa = PBXGroup;
+			children = (
+				4990A77D2698A8970022EBF1 /* Controller */,
 			);
 			path = ZWTLogin;
 			sourceTree = "<group>";
@@ -321,8 +338,7 @@
 		4993A502267D40030051C236 /* ZWTMainTabbarVC */ = {
 			isa = PBXGroup;
 			children = (
-				4993A503267D40340051C236 /* ZWTMainTabbarVC.h */,
-				4993A504267D40340051C236 /* ZWTMainTabbarVC.m */,
+				4990A77E2698A8BA0022EBF1 /* Controller */,
 			);
 			path = ZWTMainTabbarVC;
 			sourceTree = "<group>";

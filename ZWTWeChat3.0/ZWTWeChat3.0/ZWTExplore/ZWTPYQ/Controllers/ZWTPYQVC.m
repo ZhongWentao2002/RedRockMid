@@ -82,11 +82,17 @@ NSString *ID = @"cell";
     
     ZWTPYQData *data = self.PYQAry[indexPath.section];
     int i = [data.photo_count intValue];
-                          //如果是新增的cell
+    //如果是新增的cell
     if (data.tag == 1) {
         NSArray *currentphotoAry = [NSArray array];
         currentphotoAry = self.photoAryAry[indexPath.section];
-        if (i == 1) {
+        if (i == 0) {
+            MyTableViewCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"MyTableViewCell" owner:nil options:nil]firstObject];
+            cell.Users.text = data.Users;
+            cell.mianTextLbl.text = data.mianTextLbl;
+            return cell;
+        }
+        else if (i == 1) {
             MyTableViewCell3 *cell = [[[NSBundle mainBundle]loadNibNamed:@"MyTableViewCell3" owner:nil options:nil]firstObject];
             cell.user.text = data.Users;
             cell.maintext.text = data.mianTextLbl;

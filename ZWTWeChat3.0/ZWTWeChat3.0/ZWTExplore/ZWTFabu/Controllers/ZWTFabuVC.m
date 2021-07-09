@@ -17,6 +17,7 @@
 
 @interface ZWTFabuVC () <UIScrollViewDelegate,UITextViewDelegate,PHPickerViewControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource>
 
+
 @property (nonatomic,strong) UIScrollView *scrollView;
 @property (nonatomic,strong) UITextView *textView;
 @property (nonatomic,strong) UILabel *placeholder;
@@ -34,16 +35,20 @@
 
 
 - (void)viewWillAppear:(BOOL)animated{
+    
     self.navigationController.navigationBar.hidden = YES;
     self.tabBarController.tabBar.hidden = YES;
 
 
 }
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+    //缓存的文本
     NSString *s = [def objectForKey:@"cachetext"];
     NSInteger count = [def integerForKey:@"count"];
+    
     ZWTImageCache *cache = [[ZWTImageCache alloc]init];
     
 

@@ -19,4 +19,7 @@
 
 }
 
+- (IBAction)CommentBtn:(UIButton *)sender {
+    self.block();
+}
 @end

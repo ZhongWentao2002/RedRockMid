@@ -12,6 +12,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.selectionStyle = UITableViewCellSelectionStyleNone;
+    [_commentBtn addTarget:self action:@selector(postcomment:) forControlEvents:UIControlEventTouchUpInside];
     
 }
 
@@ -19,5 +20,7 @@
     [super setSelected:selected animated:animated];
 
 }
-
+- (void)postcomment:(UIButton *)btn{
+    self.block();
+}
 @end

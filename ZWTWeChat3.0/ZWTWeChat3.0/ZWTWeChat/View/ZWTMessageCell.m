@@ -12,6 +12,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    //设置选中样式为“无”
     self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 

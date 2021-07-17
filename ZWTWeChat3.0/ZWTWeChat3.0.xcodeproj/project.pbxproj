@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		13A0622B85A802B7ACBEB06F /* Pods_ZWTWeChat3_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5550EFCBB3CFA90B0CF895 /* Pods_ZWTWeChat3_0.framework */; };
+		4905E41A269E9D3A00FB055C /* CommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4905E418269E9D3A00FB055C /* CommentCell.m */; };
+		4905E41B269E9D3A00FB055C /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4905E419269E9D3A00FB055C /* CommentCell.xib */; };
 		4939DBC8267D2CBB006A4BB9 /* ZWTMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4939DBC7267D2CBB006A4BB9 /* ZWTMeTableViewController.m */; };
 		4944AECE268488B400ADFA8C /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4944AECC268488B400ADFA8C /* MyTableViewCell.m */; };
 		4944AECF268488B400ADFA8C /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4944AECD268488B400ADFA8C /* MyTableViewCell.xib */; };
@@ -35,6 +37,8 @@
 		499F27072685B9A800320270 /* MyTableViewCell4.m in Sources */ = {isa = PBXBuildFile; fileRef = 499F27062685B9A800320270 /* MyTableViewCell4.m */; };
 		499F270F2685BC0C00320270 /* MyTableViewCell5.m in Sources */ = {isa = PBXBuildFile; fileRef = 499F270E2685BC0C00320270 /* MyTableViewCell5.m */; };
 		49B715F72683925400EF14CF /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B715F62683925400EF14CF /* MyCollectionViewCell.m */; };
+		49D5FE65269EE4200026536E /* ZWTCommentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D5FE63269EE4200026536E /* ZWTCommentVC.m */; };
+		49D5FE66269EE4200026536E /* ZWTCommentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D5FE64269EE4200026536E /* ZWTCommentVC.xib */; };
 		49D87038264CE998005F9B23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D87037264CE998005F9B23 /* AppDelegate.m */; };
 		49D8703B264CE998005F9B23 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D8703A264CE998005F9B23 /* SceneDelegate.m */; };
 		49D87041264CE998005F9B23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D8703F264CE998005F9B23 /* Main.storyboard */; };
@@ -46,6 +50,9 @@
 
 /* Begin PBXFileReference section */
 		1F5550EFCBB3CFA90B0CF895 /* Pods_ZWTWeChat3_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZWTWeChat3_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4905E417269E9D3A00FB055C /* CommentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentCell.h; sourceTree = "<group>"; };
+		4905E418269E9D3A00FB055C /* CommentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentCell.m; sourceTree = "<group>"; };
+		4905E419269E9D3A00FB055C /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		4939DBC6267D2CBB006A4BB9 /* ZWTMeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWTMeTableViewController.h; sourceTree = "<group>"; };
 		4939DBC7267D2CBB006A4BB9 /* ZWTMeTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWTMeTableViewController.m; sourceTree = "<group>"; };
 		4944AECB268488B400ADFA8C /* MyTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
@@ -91,6 +98,9 @@
 		499F270E2685BC0C00320270 /* MyTableViewCell5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell5.m; sourceTree = "<group>"; };
 		49B715F52683925400EF14CF /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
 		49B715F62683925400EF14CF /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
+		49D5FE62269EE4200026536E /* ZWTCommentVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWTCommentVC.h; sourceTree = "<group>"; };
+		49D5FE63269EE4200026536E /* ZWTCommentVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWTCommentVC.m; sourceTree = "<group>"; };
+		49D5FE64269EE4200026536E /* ZWTCommentVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZWTCommentVC.xib; sourceTree = "<group>"; };
 		49D87033264CE998005F9B23 /* ZWTWeChat3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZWTWeChat3.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D87036264CE998005F9B23 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		49D87037264CE998005F9B23 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -119,6 +129,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4905E416269E9CEA00FB055C /* CommentCell */ = {
+			isa = PBXGroup;
+			children = (
+				4905E419269E9D3A00FB055C /* CommentCell.xib */,
+				4905E417269E9D3A00FB055C /* CommentCell.h */,
+				4905E418269E9D3A00FB055C /* CommentCell.m */,
+			);
+			path = CommentCell;
+			sourceTree = "<group>";
+		};
 		49530A8F26836F0C00FFB8A6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +163,7 @@
 			children = (
 				495636FA268225A600539923 /* Models */,
 				495636F92682258D00539923 /* Views */,
+				4905E416269E9CEA00FB055C /* CommentCell */,
 				495636F82682257900539923 /* Controllers */,
 			);
 			path = ZWTPYQ;
@@ -160,8 +181,8 @@
 		495636F82682257900539923 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				495636FB268225CF00539923 /* ZWTPYQVC.h */,
-				495636FC268225CF00539923 /* ZWTPYQVC.m */,
+				49D5FE60269EE4020026536E /* ZWTCommentVC */,
+				49D5FE5F269EE3DC0026536E /* ZWTPYQVC */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -169,14 +190,10 @@
 		495636F92682258D00539923 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				499F26FE2684E57F00320270 /* MyTableViewCell5.xib */,
-				499F270B2685BBD600320270 /* MyTableViewCell4.xib */,
-				499F27042685B90200320270 /* MyTableViewCell3.xib */,
-				4944AECD268488B400ADFA8C /* MyTableViewCell.xib */,
-				499F27142685BC6000320270 /* Cell5 */,
-				499F27132685BC5100320270 /* Cell4 */,
-				499F27122685BC3E00320270 /* Cell3 */,
-				499F27112685BC3100320270 /* Cell */,
+				499F27142685BC6000320270 /* CellWithThreeRowImage */,
+				499F27132685BC5100320270 /* CellWithTwoRowImage */,
+				499F27122685BC3E00320270 /* CellWithOneRowImage */,
+				499F27112685BC3100320270 /* CellWithNoImage */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -343,40 +360,63 @@
 			path = ZWTMainTabbarVC;
 			sourceTree = "<group>";
 		};
-		499F27112685BC3100320270 /* Cell */ = {
+		499F27112685BC3100320270 /* CellWithNoImage */ = {
 			isa = PBXGroup;
 			children = (
+				4944AECD268488B400ADFA8C /* MyTableViewCell.xib */,
 				4944AECB268488B400ADFA8C /* MyTableViewCell.h */,
 				4944AECC268488B400ADFA8C /* MyTableViewCell.m */,
 			);
-			path = Cell;
+			path = CellWithNoImage;
 			sourceTree = "<group>";
 		};
-		499F27122685BC3E00320270 /* Cell3 */ = {
+		499F27122685BC3E00320270 /* CellWithOneRowImage */ = {
 			isa = PBXGroup;
 			children = (
+				499F27042685B90200320270 /* MyTableViewCell3.xib */,
 				499F26FC2684E57F00320270 /* MyTableViewCell3.h */,
 				499F26FD2684E57F00320270 /* MyTableViewCell3.m */,
 			);
-			path = Cell3;
+			path = CellWithOneRowImage;
 			sourceTree = "<group>";
 		};
-		499F27132685BC5100320270 /* Cell4 */ = {
+		499F27132685BC5100320270 /* CellWithTwoRowImage */ = {
 			isa = PBXGroup;
 			children = (
+				499F270B2685BBD600320270 /* MyTableViewCell4.xib */,
 				499F27052685B9A800320270 /* MyTableViewCell4.h */,
 				499F27062685B9A800320270 /* MyTableViewCell4.m */,
 			);
-			path = Cell4;
+			path = CellWithTwoRowImage;
 			sourceTree = "<group>";
 		};
-		499F27142685BC6000320270 /* Cell5 */ = {
+		499F27142685BC6000320270 /* CellWithThreeRowImage */ = {
 			isa = PBXGroup;
 			children = (
+				499F26FE2684E57F00320270 /* MyTableViewCell5.xib */,
 				499F270D2685BC0C00320270 /* MyTableViewCell5.h */,
 				499F270E2685BC0C00320270 /* MyTableViewCell5.m */,
 			);
-			path = Cell5;
+			path = CellWithThreeRowImage;
+			sourceTree = "<group>";
+		};
+		49D5FE5F269EE3DC0026536E /* ZWTPYQVC */ = {
+			isa = PBXGroup;
+			children = (
+				495636FB268225CF00539923 /* ZWTPYQVC.h */,
+				495636FC268225CF00539923 /* ZWTPYQVC.m */,
+			);
+			path = ZWTPYQVC;
+			sourceTree = "<group>";
+		};
+		49D5FE60269EE4020026536E /* ZWTCommentVC */ = {
+			isa = PBXGroup;
+			children = (
+				49D5FE64269EE4200026536E /* ZWTCommentVC.xib */,
+				49D5FE62269EE4200026536E /* ZWTCommentVC.h */,
+				49D5FE63269EE4200026536E /* ZWTCommentVC.m */,
+			);
+			path = ZWTCommentVC;
 			sourceTree = "<group>";
 		};
 		49D8702A264CE998005F9B23 = {
@@ -513,6 +553,7 @@
 				49D87046264CE99C005F9B23 /* LaunchScreen.storyboard in Resources */,
 				4956371126822EC900539923 /* ZWTFabuVC.xib in Resources */,
 				495477D42685C6B600A6F1E0 /* MyTableViewCell4.xib in Resources */,
+				49D5FE66269EE4200026536E /* ZWTCommentVC.xib in Resources */,
 				4963A1E7264CF20F005F4FBF /* ZWTContactsData.plist in Resources */,
 				499F27002684E57F00320270 /* MyTableViewCell5.xib in Resources */,
 				49D87043264CE99C005F9B23 /* Assets.xcassets in Resources */,
@@ -520,6 +561,7 @@
 				495477D22685C4E000A6F1E0 /* MyTableViewCell3.xib in Resources */,
 				4989F745264D0A1D00223ED9 /* ZWTMessageCell.xib in Resources */,
 				49D87041264CE998005F9B23 /* Main.storyboard in Resources */,
+				4905E41B269E9D3A00FB055C /* CommentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,7 +625,9 @@
 				49D87049264CE99C005F9B23 /* main.m in Sources */,
 				4993A505267D40340051C236 /* ZWTMainTabbarVC.m in Sources */,
 				4944AECE268488B400ADFA8C /* MyTableViewCell.m in Sources */,
+				4905E41A269E9D3A00FB055C /* CommentCell.m in Sources */,
 				4956371026822EC900539923 /* ZWTFabuVC.m in Sources */,
+				49D5FE65269EE4200026536E /* ZWTCommentVC.m in Sources */,
 				49D8703B264CE998005F9B23 /* SceneDelegate.m in Sources */,
 				4989F74B264D114100223ED9 /* ZWTContactsData.m in Sources */,
 				499F270F2685BC0C00320270 /* MyTableViewCell5.m in Sources */,

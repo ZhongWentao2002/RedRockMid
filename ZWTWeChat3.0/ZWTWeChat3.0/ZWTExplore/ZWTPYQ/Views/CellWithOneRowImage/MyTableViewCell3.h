@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) IBOutlet UIImageView *image1;
 @property (strong, nonatomic) IBOutlet UIImageView *image2;
 @property (strong, nonatomic) IBOutlet UIImageView *image3;
+@property (copy,nonatomic) void(^block)(void);
+- (IBAction)CommentBtn:(UIButton *)sender;
 
 @end
 

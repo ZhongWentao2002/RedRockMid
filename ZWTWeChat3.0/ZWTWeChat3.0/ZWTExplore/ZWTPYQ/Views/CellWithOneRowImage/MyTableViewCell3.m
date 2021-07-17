@@ -6,7 +6,7 @@
 //
 
 #import "MyTableViewCell3.h"
-
+#import "ZWTCommentVC.h"
 @implementation MyTableViewCell3
 
 - (void)awakeFromNib {
@@ -14,10 +14,8 @@
     self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
+- (IBAction)CommentBtn:(UIButton *)sender {
+    self.block();
 }
-
 @end

@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MyTableViewCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *mianTextLbl;
 @property (strong, nonatomic) IBOutlet UILabel *Users;
+@property (copy,nonatomic) void(^block)(void);
+@property (strong, nonatomic) IBOutlet UIButton *commentBtn;
 
 
 

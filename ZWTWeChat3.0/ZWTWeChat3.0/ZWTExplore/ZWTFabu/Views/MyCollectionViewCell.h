@@ -2,8 +2,7 @@
 //  MyCollectionViewCell.h
 //  UICollectionView
 //
-//  Created by mac on 2017/11/16.
-//  Copyright © 2017年 mac. All rights reserved.
+//Created by 钟文韬 on 2021/6/22.
 //
 
 #import <UIKit/UIKit.h>

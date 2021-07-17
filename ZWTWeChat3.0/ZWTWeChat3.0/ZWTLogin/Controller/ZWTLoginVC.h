@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZWTLoginVC : UIViewController
-@property (strong, nonatomic) IBOutlet UIButton *loginbtn;
+@property (strong, nonatomic) IBOutlet UIButton *loginbtn;//登录按钮
 
 @end
 

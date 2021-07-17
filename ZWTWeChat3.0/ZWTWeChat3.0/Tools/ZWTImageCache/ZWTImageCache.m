@@ -22,7 +22,6 @@
         
         if (![fileManager fileExistsAtPath:createPath]) {
             [fileManager createDirectoryAtPath:createPath withIntermediateDirectories:YES attributes:nil error:nil];
-            NSLog(@"已创建文件夹");
         }
         
         NSString *filePath = [NSString stringWithFormat:@"%@/%@.png",createPath,ImageName];

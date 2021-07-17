@@ -1,17 +1,17 @@
 //
-//  MyTableViewCell4.m
+//  CommentCell.m
 //  ZWTWeChat3.0
 //
-//  Created by 钟文韬 on 2021/6/25.
+//  Created by 钟文韬 on 2021/7/14.
 //
 
-#import "MyTableViewCell4.h"
+#import "CommentCell.h"
 
-@implementation MyTableViewCell4
+@implementation CommentCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    // Initialization code
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
